@@ -3,7 +3,7 @@ const React = require("react");
 class New extends React.Component {
   render() {
     return (
-      <div>
+      <div key="logs">
         <h1>
           <a href="/logs">Home</a>
         </h1>

@@ -7,6 +7,8 @@ const reactViews = require("express-react-views");
 const mongoose = require("mongoose");
 const Log = require('./models/logs');
 
+const methodOverRide = require('method-override')
+
 //connect to database
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
@@ -31,7 +33,14 @@ app.use((req, res, next) => {
 //use and configure body-parser in your server.js
 app.use(express.urlencoded({ extended: false }));
 
-//Routes 
+//====ROUTES====INDUCES====
+
+//create Delete route
+app.delete('/logs/:id', (req, res) => {
+    Log.findByIdAndDelete(req.params.id, (err, data) => {
+        res.redirect('/logs')
+    })
+})
 
 //create Index route
 app.get('/logs', (req, res) => {
@@ -75,7 +84,7 @@ app.post("/logs", (req, res) => {
 });
 
 //Create Show route
-app.get('/:id', (req, res) => {
+app.get('/logs/:id', (req, res) => {
     Log.findById(req.params.id, (error, foundLog) => {
         if (!error) {
             res.status(200).render('Show', { log: foundLog })

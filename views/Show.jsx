@@ -1,16 +1,18 @@
 const React = require("react");
 class Show extends React.Component {
   render() {
-    const { log } = this.props.log;
+    const { log } = this.props;
     return (
-      <div>
+      <div key="log">
+        <a href="./">Home</a>
         <h2>Show Page</h2>
-        <p>{title}</p>
+        <p>The {log.title}</p>
+        <p>{log.entry}</p>
+        {log.shipIsBroken
+          ? "Ship is Experiencing Mechanical Failure"
+          : "Ahoy Mateys!"}
         <br />
-        <p>{entry}</p>
-        {shipIsBroken ? "Ship Mechanical Failure" : "Ahoy Mateys!"}
-        <br />
-        {timestamps}
+        {log.timestamps}
       </div>
     );
   }
