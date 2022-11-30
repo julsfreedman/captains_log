@@ -1,22 +1,22 @@
 const React = require("react");
+const DefaultLayOut = require("./layouts/Default");
 
 class New extends React.Component {
   render() {
     return (
-      <div key="logs">
-        <h1>
-          <a href="/logs">Home</a>
-        </h1>
+      <DefaultLayOut key="logs">
+        <a href="/logs" style={{ color: "blueviolet" }}>
+          Home
+        </a>
+
         <form action="/logs" method="POST">
-          <input type="text" name="Log Title" />
+          Title: <input type="text" name="title" /> <br />
+          Entry: <input type="textarea" name="entry" /> <br />
+          Ship is Broken: <input type="checkbox" name="shipIsBroken" />
           <br />
-          <input type="textarea" name="Log Entry" />
-          <br />
-          <input type="checkbox" name="shipIsBroken" />
-          <br />
-          <input type="submit" />
+          <input type="submit" value="Enter New Log" />
         </form>
-      </div>
+      </DefaultLayOut>
     );
   }
 }

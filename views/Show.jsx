@@ -1,20 +1,23 @@
 const React = require("react");
+const DefaultLayOut = require("./layouts/Default");
+
 class Show extends React.Component {
   render() {
     const { log } = this.props;
     return (
-      <div key="log">
-        <a href="./">Home</a>
+      <DefaultLayOut key="log">
+        <a href="./" style={{ color: "blueviolet" }}>
+          Home
+        </a>
         <h2>Show Page</h2>
         <p>The {log.title}</p>
         <p>{log.entry}</p>
-        {log.shipIsBroken
-          ? "Ship is Experiencing Mechanical Failure"
-          : "Ahoy Mateys!"}
+        {log.shipIsBroken ? "Ship has Mechanical Failure" : "Ahoy, Mateys!"}
         <br />
         {log.timestamps}
-      </div>
+      </DefaultLayOut>
     );
   }
 }
+
 module.exports = Show;
