@@ -74,6 +74,16 @@ app.post("/logs", (req, res) => {
     })
 });
 
+//Create Show route
+app.get('/:id', (req, res) => {
+    Log.findById(req.params.id, (error, foundLog) => {
+        if (!error) {
+            res.status(200).render('Show', { log: foundLog })
+        } else {
+            res.status(400).send(error)
+        }
+    })
+})
 
 
 //listen on PORT
