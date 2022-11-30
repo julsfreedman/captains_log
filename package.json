@@ -1,0 +1,23 @@
+{
+  "name": "captains_log",
+  "version": "1.0.0",
+  "description": "Captain's Log\r Practice What You Learned\r The Captain's LogLearning Objectives\r Full CRUD app with a mongo database\r Prerequisites\r JavaScript\r Express / Node\r Mongo / Mongoose\r Multi-part/Multi-day Lab\r Every great captain, whether on the waters or in the skies, keeps a daily log.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-react-views": "^0.11.0",
+    "mongoose": "^6.7.4",
+    "nodemon": "^2.0.20",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
