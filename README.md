@@ -1,23 +1,25 @@
-Captain's Log
-Practice What You Learned
-The Captain's LogLearning Objectives
-Full CRUD app with a mongo database
-Prerequisites
-JavaScript
-Express / Node
-Mongo / Mongoose
-Multi-part/Multi-day Lab
-Every great captain, whether on the waters or in the skies, keeps a daily log.
+# Captain's Log</br>
+
+</br>
+Practice What You Learned</br>
+The Captain's LogLearning Objectives</br>
+Full CRUD app with a mongo database</br>
+Prerequisites</br>
+JavaScript</br>
+Express / Node</br>
+Mongo / Mongoose</br>
+Multi-part/Multi-day Lab</br>
+Every great captain, whether on the waters or in the skies, keeps a daily log.</br>
 
 Let's build the perfect Captain's Log App for our extraordinary captains.
 
 There are many ways to get started building an app. This lab follows a specific order for two reasons:
 
-to align with the content of lecture
-to give you an order to guide you to create small bits of functionality and test each one before moving on to the next part
+to align with the content of lecture</br>
+to give you an order to guide you to create small bits of functionality and test each one before moving on to the next part</br>
 
-Set up
-Let's keep track of our Restful Routes as we build out our app. Copy/paste this table into a fresh file, open an excel/sheets spreadsheet or draw on a piece of paper. Feel free to add more columns and notes to help you put it all together.
+Set up</br>
+Let's keep track of our Restful Routes as we build out our app. Copy/paste this table into a fresh file, open an excel/sheets spreadsheet or draw on a piece of paper. Feel free to add more columns and notes to help you put it all together.</br>
 
 Index, New and Create has been completed for you.
 
