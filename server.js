@@ -4,6 +4,7 @@ const app = express();
 const PORT = 3000;
 const reactViews = require("express-react-views");
 
+
 const mongoose = require("mongoose");
 
 
@@ -33,14 +34,20 @@ app.use(express.urlencoded({ extended: false }));
 
 
 //Routes 
-//create a new route
+//create a New route
 app.get("/new", (req, res) => {
     //res.send("New");
     res.render("New");
 });
 
-//create a create route
+//create a Create route
 app.post("/logs", (req, res) => {
+    //change the input of your checkbox to be true/false rather than on
+    if (req.body.shipIsBroken === "true") {
+        req.body.shipIsBroken = true
+    } else {
+        req.body.shipIsBroken = false
+    }
     res.send(req.body)
     console.log(req.body);
 });
