@@ -25,22 +25,22 @@ Restful Routes
 
 # Action URL HTTP Verb jsx view filename mongoose method
 
-1 Index /logs/ GET Index.jsx Log.find()
-2 Show
-3 New /logs/new GET New.jsx none
-4 Create /logs/ POS T none Log.create(req.body)
-5 Edit
-6 Update
-7 Destroy
+1 Index /logs/ GET Index.jsx Log.find()</br>
+2 Show</br>
+3 New /logs/new GET New.jsx none</br>
+4 Create /logs/ POS T none Log.create(req.body)</br>
+5 Edit</br>
+6 Update</br>
+7 Destroy</br>
 
-New
-Create
-Mongo
-Logs Model
-Upgrade your Create Route
-Index Route
-Show Route
-Delete Route
-Edit Route
-Update Route
+New</br>
+Create</br>
+Mongo</br>
+Logs Model</br>
+Upgrade your Create Route</br>
+Index Route</br>
+Show Route</br>
+Delete Route</br>
+Edit Route</br>
+Update Route</br>
 Router

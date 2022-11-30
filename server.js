@@ -4,9 +4,8 @@ const app = express();
 const PORT = 3000;
 const reactViews = require("express-react-views");
 
-
 const mongoose = require("mongoose");
-
+const Log = require('./models/logs');
 
 //connect to database
 mongoose.connect(process.env.MONGO_URI, {
@@ -43,7 +42,7 @@ app.get("/new", (req, res) => {
 //create a Create route
 app.post("/logs", (req, res) => {
     //change the input of your checkbox to be true/false rather than on
-    if (req.body.shipIsBroken === "true") {
+    if (req.body.shipIsBroken === "on") {
         req.body.shipIsBroken = true
     } else {
         req.body.shipIsBroken = false

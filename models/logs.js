@@ -4,7 +4,7 @@ const logSchema = new mongoose.Schema(
     {
         title: { type: String, required: true },
         entry: { type: String, required: true },
-        //shipIsBroken: Boolean (bonus: set a default to true) The default value of Boolean is false. 
+        //shipIsBroken: Boolean (bonus: set a default to true) The default value of Boolean is false. Below does not change default, still working on this bonus. 
         shipIsBroken: { type: Boolean, required: true },
     },
     {
